@@ -16,50 +16,29 @@ Il illustre la transition entre les **représentations classiques du langage (Wo
 ---
 
 ## Structure
-
+```
 sentiment_analysis/
-
 ├── data/
-
 │   ├── raw/
-
 │   └── processed/
-
 ├── models/
-
 │   ├── word2vec/
-
 │   │   └── word2vec.model
-
 │   ├── classifiers/
-
 │   │   └── logistic_word2vec.joblib
-
 │   └── distilbert_finetuned/
-
 ├── scripts/
-
 │   ├── download_data.py
-
 │   ├── preprocess.py
-
 │   ├── train_word2vec.py
-
-
 │   ├── train_classifier.py
-
 │   ├── finetune_transformer.py
-
 │   └── evaluate.py
-
 ├── streamlit_app.py
-
 ├── utils.py
-
 ├── requirements.txt
-
 └── README.md
-
+```
 
 ---
 
