@@ -6,7 +6,7 @@ Il illustre la transition entre les **représentations classiques du langage (Wo
 
 ---
 
-## 🪜 Étapes du projet
+## Étapes du projet
 1. **Prétraitement & exploration** des données (IMDB dataset)
 2. **Entraînement Word2Vec** + classification traditionnelle
 3. **Fine-tuning DistilBERT** sur les mêmes données
@@ -15,28 +15,49 @@ Il illustre la transition entre les **représentations classiques du langage (Wo
 
 ---
 
-## 📂 Structure
+## Structure
 
 sentiment_analysis/
+
 ├── data/
+
 │   ├── raw/
+
 │   └── processed/
+
 ├── models/
+
 │   ├── word2vec/
+
 │   │   └── word2vec.model
+
 │   ├── classifiers/
+
 │   │   └── logistic_word2vec.joblib
+
 │   └── distilbert_finetuned/
+
 ├── scripts/
+
 │   ├── download_data.py
+
 │   ├── preprocess.py
+
 │   ├── train_word2vec.py
+
+
 │   ├── train_classifier.py
+
 │   ├── finetune_transformer.py
+
 │   └── evaluate.py
+
 ├── streamlit_app.py
+
 ├── utils.py
+
 ├── requirements.txt
+
 └── README.md
 
 
@@ -47,8 +68,9 @@ sentiment_analysis/
 2. `pip install -r requirements.txt`
 3. `python -m spacy download en_core_web_sm`
 
+---
    
-## ⚙️ Lancer l'application streamlit
+## Lancer l'application streamlit
 
 1. `python scripts/download_data.py`
 2. `python scripts/preprocess.py`
@@ -58,15 +80,18 @@ sentiment_analysis/
 6. `python scripts/evaluate.py`
 7. `streamlit run streamlit_app.py`
 
+---
 
-## 🧩 Technologies
+## Technologies
 
 - Python, Pandas, NumPy, Scikit-learn
 - NLTK / spaCy / Gensim
 - Transformers (Hugging Face), PyTorch
 - Streamlit pour le déploiement
 
-## ✨ Résultat attendu
+---
+
+## Résultat attendu
 
 Une application simple et interactive :
 
@@ -74,9 +99,11 @@ Entrée texte → modèle DistilBERT → résultat de sentiment
 
 Comparaison entre Word2Vec et Transformers 
 
+---
 
+## Live Demo
+Essayez l'application interactive Streamlit ici :  
+[https://28-kone-portfolio-sentiment-analysisstreamlit-app-v1nprb.streamlit.app/](https://28-kone-portfolio-sentiment-analysisstreamlit-app-v1nprb.streamlit.app/)
 
-## Notes
-- Application déjà deployé avec Streamlit : [https://28-kone-portfolio-sentiment-analysisstreamlit-app-v1nprb.streamlit.app/]
 
 
