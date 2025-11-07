@@ -1,6 +1,6 @@
-# 🎬 Analyse de Sentiment - NLP & Transformers
+# 🎬 IA for movies reviews analysis
 
-## 🧠 Objectif
+## Objectif
 Ce projet vise à construire un modèle capable de déterminer si une critique de film est **positive** ou **négative**.  
 Il illustre la transition entre les **représentations classiques du langage (Word2Vec)** et les **modèles modernes basés sur les Transformers (DistilBERT)**.
 
