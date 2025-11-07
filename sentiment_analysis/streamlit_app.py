@@ -1,7 +1,6 @@
 # 🎬 CineMind — Movie Review Sentiment Analysis
 # Interactive & Visual Comparison: Word2Vec + DistilBERT
 
-
 import streamlit as st
 from pathlib import Path
 import joblib
@@ -9,6 +8,8 @@ from gensim.models import Word2Vec
 from transformers import pipeline, AutoTokenizer, AutoModelForSequenceClassification
 import numpy as np
 from utils import get_device
+from huggingface_hub import hf_hub_download
+
 
 # STREAMLIT CONFIG
 
@@ -43,11 +44,13 @@ CLASSIFIER_PATH = "models/classifiers/logistic_word2vec.joblib"
 
 @st.cache_resource
 def load_word2vec_and_clf():
-    if Path(WORD2VEC_MODEL_PATH).exists() and Path(CLASSIFIER_PATH).exists():
-        w2v = Word2Vec.load(str(WORD2VEC_MODEL_PATH))
-        clf = joblib.load(str(CLASSIFIER_PATH))
-        return w2v, clf
-    return None, None
+    w2v_repo = "28-KONE/sentiment-analysis-word2vec"
+    w2v_path = hf_hub_download(repo_id=w2v_repo, filename="word2vec.model")
+    clf_path = hf_hub_download(repo_id=w2v_repo, filename="logistic_word2vec.joblib")
+    w2v = Word2Vec.load(w2v_path)
+    clf = joblib.load(clf_path)
+    return w2v, clf
+
 
 @st.cache_resource
 def load_transformer():
