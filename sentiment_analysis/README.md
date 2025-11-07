@@ -16,13 +16,6 @@ Il illustre la transition entre les **représentations classiques du langage (Wo
 ---
 
 ## 📂 Structure
-sentiment_analysis/
-├── data/ # Données brutes et traitées
-├── models/ # Modèles enregistrés
-├── notebooks/ # Notebooks d'expérimentation
-├── streamlit_app.py # Interface de démonstration
-├── requirements.txt
-└── README.md
 
 sentiment_analysis/
 ├── data/
@@ -34,11 +27,6 @@ sentiment_analysis/
 │   ├── classifiers/
 │   │   └── logistic_word2vec.joblib
 │   └── distilbert_finetuned/
-├── notebooks/
-│   ├── 01_data_exploration.ipynb
-│   ├── 02_word2vec_training.ipynb
-│   ├── 03_transformers_finetuning.ipynb
-│   └── 04_evaluation_and_comparison.ipynb
 ├── scripts/
 │   ├── download_data.py
 │   ├── preprocess.py
@@ -54,44 +42,14 @@ sentiment_analysis/
 
 ---
 
-## ⚙️ Installation
-```bash
-git clone https://github.com/<votre_username>/sentiment_analysis.git
-cd sentiment_analysis
-pip install -r requirements.txt
-
-
-Pour lancer : streamlit run streamlit_app.py
-
-
-🧩 Technologies
-
-Python, Pandas, NumPy, Scikit-learn
-
-NLTK / spaCy / Gensim
-
-Transformers (Hugging Face), PyTorch
-
-Streamlit pour le déploiement
-
-✨ Résultat attendu
-
-Une application simple et interactive :
-
-Entrée texte → modèle DistilBERT → résultat de sentiment
-
-Comparaison entre Word2Vec et Transformers (via notebooks)
-
-
-
-# Analyse de Sentiment - IMDB (Word2Vec vs DistilBERT)
-
 ## Installation
 1. Crée un virtualenv / conda env
 2. `pip install -r requirements.txt`
 3. `python -m spacy download en_core_web_sm`
 
-## Pipeline recommandé
+   
+## ⚙️ Lancer l'application streamlit
+
 1. `python scripts/download_data.py`
 2. `python scripts/preprocess.py`
 3. `python scripts/train_word2vec.py`
@@ -100,10 +58,25 @@ Comparaison entre Word2Vec et Transformers (via notebooks)
 6. `python scripts/evaluate.py`
 7. `streamlit run streamlit_app.py`
 
-## Structure
-(voir la section Structure plus haut)
+
+## 🧩 Technologies
+
+- Python, Pandas, NumPy, Scikit-learn
+- NLTK / spaCy / Gensim
+- Transformers (Hugging Face), PyTorch
+- Streamlit pour le déploiement
+
+## ✨ Résultat attendu
+
+Une application simple et interactive :
+
+Entrée texte → modèle DistilBERT → résultat de sentiment
+
+Comparaison entre Word2Vec et Transformers 
+
+
 
 ## Notes
-- DistilBERT fine-tuning : si tu as GPU, Trainer utilisera CUDA; sinon utilisation CPU (moins rapide).
-- Pour HP/Production : utiliser des mécanismes de logging, checkpoints plus fréquents, scheduler LR, et validation holdout.
+- Application déjà deployé avec Streamlit : [https://28-kone-portfolio-sentiment-analysisstreamlit-app-v1nprb.streamlit.app/]
+
 
