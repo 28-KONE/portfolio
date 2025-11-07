@@ -42,7 +42,7 @@ Passionnée par l’IA, j’aime explorer la frontière entre les **mathématiqu
   
 **Résultat :** comparaison entre Word2Vec + logistic regression et DistilBERT fine-tuné.
 
-**Lien GitHub :** [(https://github.com/28-KONE/portfolio-data-science/tree/main/sentiments_analysis)]
+**Lien GitHub :** [(https://28-kone-portfolio-sentiment-analysisstreamlit-app-v1nprb.streamlit.app/)]
 
 ---
 
