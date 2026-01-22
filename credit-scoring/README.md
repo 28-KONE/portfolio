@@ -25,9 +25,3 @@ L’objectif n’est donc pas uniquement de maximiser l’accuracy, mais de **tr
 - Adapter les métriques d’évaluation au contexte métier
 - Réduire la complexité d’un modèle sans sacrifier la performance
 - Industrialiser une solution via des pipelines reproductibles
-
-**Notebooks disponibles** :
-
-- **Projet_AS.ipynb**
-- **Projet_AS_Partie2.ipynb**
-
