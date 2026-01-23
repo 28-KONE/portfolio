@@ -43,6 +43,12 @@ L’objectif de ce projet est de **prédire la consommation énergétique à cou
 - Validation temporelle (respect de l’ordre chronologique)
 - Analyse des erreurs sur les pics de consommation
 
+#### Données conso ─┐
+                    ├─ EDA ─> Feature Engineering ─> Modèles ─> Prédictions ─> Évaluation
+#### Données météo ─┘
+
+### Résultats : A venir
+
 ---
 
 ## Ce projet m’a permis de faire :
