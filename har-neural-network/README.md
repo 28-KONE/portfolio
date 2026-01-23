@@ -20,9 +20,19 @@ Ce projet vise à **classifier des activités humaines** à partir de données i
 ---
 
 ## Données
+Les données utilisées dans ce projet ne sont pas incluses dans le repository en raison de leur taille.
 - Données issues de smartphones portés par des individus
 - Capteurs : accéléromètre et gyroscope
 - Activités : marche, montée/descente d’escaliers, position statique, etc.
+
+### Source
+- Dataset : *Human Activity Recognition Using Smartphones*
+- Source officielle : UCI Machine Learning Repository
+
+### Instructions
+1. Télécharger le dataset depuis la source officielle
+2. Extraire les fichiers dans le dossier `data/`
+3. Exécuter les notebooks dans l’ordre indiqué
 
 ---
 
