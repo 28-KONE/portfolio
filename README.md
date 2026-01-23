@@ -14,9 +14,27 @@ Mon objectif : concevoir des modèles de Machine Learning **robustes, interprét
 ---
 
 ## Projets réalisés  
-### 
+### Crédit Scoring - Classification supervisée & gestion du risque
+Construction d’un modèle de crédit scoring visant à prédire le risque de défaut client à partir de données socio-économiques.
+Le projet explore l’ensemble du cycle de vie d’un modèle de Machine Learning : exploration, feature engineering, comparaison d’algorithmes, optimisation et industrialisation via pipelines reproductibles.
 
+*Mots-clés* : classification, données déséquilibrées, métriques métier, Random Forest, XGBoost, pipelines scikit-learn.
 
+---
+
+### Prévision de consommation énergétique - Séries temporelles & données exogènes
+Développement de modèles de prévision de la consommation énergétique à court et moyen terme, en intégrant des données historiques et des variables exogènes (météo, calendrier).
+Ce projet s’inscrit dans un contexte industriel où la fiabilité des prédictions est critique pour l’optimisation des ressources.
+
+*Mots-clés* : séries temporelles, feature engineering temporel, régression, XGBoost, interprétation.
+
+---
+
+### Human Activity Recognition — Deep Learning & données de capteurs
+Classification d’activités humaines à partir de données issues de capteurs inertiels (accéléromètre, gyroscope).
+Le projet compare différentes architectures de réseaux de neurones et analyse leur capacité de généralisation sur des données bruitées du monde réel.
+
+*Mots-clés* : Deep Learning, CNN, MLP, capteurs, analyse des représentations.
 
 ---
 
