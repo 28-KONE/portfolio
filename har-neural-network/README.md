@@ -68,3 +68,18 @@ Ce projet vise à **classifier des activités humaines** à partir de données i
 - `notebooks/` : preprocessing, entraînement et évaluation
 - `data/` : données capteurs
 - `README.md` : description et analyse du projet
+
+---
+
+## Rapport détaillé
+
+Un rapport complet accompagne ce projet et présente de manière approfondie :
+- l’analyse exploratoire des données,
+- la comparaison systématique des architectures (MLP profonds),
+- l’étude du sur-apprentissage et des techniques de régularisation,
+- l’évaluation finale sur jeu de test,
+- l’interprétabilité des modèles via t-SNE et UMAP.
+
+**Rapport** : `report/HAR_Deep_Learning_Report_Damba_KONE.pdf`
+
+> Ce document met l’accent sur la justification des choix méthodologiques et l’analyse critique des résultats, dans le cadre d'une introduction à la recherche appliquée.
