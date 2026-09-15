@@ -60,6 +60,3 @@ Le projet compare différentes architectures de réseaux de neurones et analyse 
 -  **LinkedIn :** [www.linkedin.com/in/damba-kone](https://www.linkedin.com/in/damba-kone)  
 -  Basée à Lyon / Ouverte à la mobilité en France & Europe  
 
----
-
- _« La data est le reflet du monde, l’intelligence artificielle est notre manière de le comprendre. »_  "
